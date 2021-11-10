@@ -19,6 +19,27 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        
+       <script>
+		$(document).ready(function(){
+			$("#I").hover(function(){
+				$("#PICTURE").attr("src","family.jpg");
+				});
+
+			$("#PU").hover(function(){
+				$("#PICTURE").attr("src","pu.jpg");
+			});
+
+			$("#CSIM").hover(function(){
+				$("#PICTURE").attr("src","pucsim.jpg");
+			});
+
+			$("#PICTURE").click(function(){
+				$("#PICTURE").hide();
+				$("#PICTURE").fadeIn("slow")
+		});
+	});
+</script>
 
 </head>
 <body>
@@ -42,9 +63,12 @@
         <main class="container-fluid bg-info text-white text-center">
           
       </nav>
-				<h1>蔡鎮彥 (Chen-Yen Tsai)<h1>
-				<h2>靜宜大學 https://www.pu.edu.tw/<h2>
- 				<h2>資訊管理學系 https://csim.pu.edu.tw/<h2>
+				<h1><a href="https://www.facebook.com/leo.tsai.50/"
+					class="text-reset text-decoration-none text-white bg-primary">蔡鎮彥 (Chen-Yen Tsai)</a><h1>
+				<h2><a href="https://www.pu.edu.tw/"
+					class="text-reset text-decoration-none text-white bg-primary">靜宜大學</a>
+ 				<h2><a href="https://csim.pu.edu.tw/"
+ 					class="text-reset text-decoration-none text-white bg-primary">資訊管理學系</a><h2>
 		  <nav>
 
 		  <img src="family.jpg" alt="照片"class="img-fluid rounded-circle">
@@ -57,8 +81,10 @@
 		<h3>職稱：學生<h3>
 		<h3>經歷：光復國小 明道中學 普台高中<h3>
 		<h3>Tel:<a href="tel:0936852337">0936852337</a><h3>
-		<h3>E-Mail(個人):<a href="mailto:leotsai54088@gmail.com">leotsai54088@gmail.com</a><h3>
-       	<h3>E-Mail(學校):<a href="mailto:s1091782@gm.pu.edu.tw">s1091782@gm.pu.edu.tw</a><h3>
+		<h3>E-Mail(個人):<a href="mailto:leotsai54088@gmail.com"
+			class="text-reset text-decoration-none text-white bg-info">leotsai54088@gmail.com</a><h3>
+       	<h3>E-Mail(學校):<a href="mailto:s1091782@gm.pu.edu.tw"
+       	class="text-reset text-decoration-none text-white bg-info">s1091782@gm.pu.edu.tw</a><h3>
 	</session>
 
 	<article id="bookmark" class="col-lg-4">
